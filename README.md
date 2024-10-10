@@ -5,4 +5,4 @@ Collaborators :
   Abhishek Nejkar
   Gayatri Pokale
   Hrishikesh Kulkarni
-  Rajvi Choksi
+  Rajvi Nilesh Chokshi
