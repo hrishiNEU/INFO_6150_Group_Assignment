@@ -2,6 +2,23 @@
 /* Abhishek's code area end */
 
 /* Gayatri's code area start */
+#banner{
+    background-color: #F4F8F7;
+}
+h1,h2{
+    color: #15B392;
+}
+
+.btn {
+    background-color: #D2FF72; /* Initial button color */
+    color: #333333;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.btn:hover {
+    background-color: #00796B; /* Button color on hover */
+}
 /* Gayatri's code area end */
 
 /* Hrishi's code area start */
