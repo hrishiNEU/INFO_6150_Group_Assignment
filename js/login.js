@@ -28,8 +28,18 @@ $(document).ready(function () {
     }
 
     signInBtn.prop("disabled", !isValid);
+    return isValid;
   }
 
   emailInput.on("input", validateInputs);
   passwordInput.on("input", validateInputs);
+
+  // Handle form submission
+  $("form").on("submit", function (event) {
+    event.preventDefault();
+
+    if (validateInputs()) {
+      window.location.href = "index.html";
+    }
+  });
 });
