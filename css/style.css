@@ -1,73 +1,70 @@
 /* Abhishek's code area start */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    background-color: #15b392;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+.btn {
+  background-color: #15b392;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 .image-section {
-    position: relative;
-    height: 80vh;
-    background-image: url('images/first.jpeg');
-    background-size: cover;
-    background-position: center; 
+  position: relative;
+  height: 80vh;
+  background-image: url("../images/first.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .image-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
-
 
 .overlay {
-    position: relative;
-    color: white;
-    text-align: center;
-    top: 80%;
-    transform: translateY(-50%); 
-    z-index: 2;
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 80%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
-
-
 
 /* Abhishek's code area end */
 
 /* Gayatri's code area start */
-#banner{
-    background-color: #F4F8F7;
+#banner {
+  background-color: #f4f8f7;
 }
-h1,h2{
-    color: #15B392;
+h1,
+h2 {
+  color: #15b392;
 }
 
 .btn {
-    background-color: #D2FF72; /* Initial button color */
-    color: #333333;
-    border: none;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+  background-color: #d2ff72; /* Initial button color */
+  color: #333333;
+  border: none;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
 .btn:hover {
-    background-color: #00796B; /* Button color on hover */
+  background-color: #00796b; /* Button color on hover */
 }
 /* Gayatri's code area end */
 

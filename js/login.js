@@ -39,7 +39,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     if (validateInputs()) {
-      window.location.href = "index.html";
+      window.location.href = "landingPage.html";
     }
   });
 });
