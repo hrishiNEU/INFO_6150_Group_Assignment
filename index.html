@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login Page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,584 +15,62 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="stylesheet" href="formstyle.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <!--Abhishek's code area start-->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="card-img-top" alt="..." style="height:40px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas"   data-bs-target="#offcanvas">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Introduction</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
-              </li>
-            </ul>
+    <section
+      class="vh-100 d-flex flex-column justify-content-start align-items-center"
+    >
+      <h1 class="title">Welcome to Our Community</h1>
+      <div class="container h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+          <div class="col-md-8 col-lg-7 col-xl-6">
+            <img
+              src="images/Marketing-pana.png"
+              class="img-fluid"
+              alt="Phone image"
+            />
           </div>
-        </div>
-      </nav>
-
-      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">Hobby Lobby</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          A platform where enthusiasts can discover, connect, and share their passions with like-minded individuals.
-        </div>
-      </div>
-
-      <section class="image-section">
-        <div class="overlay">
-            <h1>Connect with Your Hobbies</h1>
-            <button class="btn btn-dark">Share your hobby moments</button>
-        </div>
-      </section>
-
-        <div class="container text-center" style="padding-top: 100px">
-          <div class="row row-cols-3">
-            <div class="col d-flex justify-content-center pt-5">
-              <div class="card" style="width: 18rem;">
-                <img src="images/BookClub.jpg" class="card-img-top" alt="..." style="height: 200px">
-                <div class="card-body">
-                  <p class="card-text"><h3>Book Club <span class="badge text-bg-secondary">New</span></h3></p>
-                </div>
+          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <h2 class="form-title mb-4">Login to your account</h2>
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+                <div id="emailError" class="text-danger mt-1"></div>
+                <!-- Error message placeholder -->
               </div>
-            </div>
-            <div class="col d-flex justify-content-center pt-5">
-              <div class="card" style="width: 18rem;">
-                <img src="images/Cooking.jpeg" class="card-img-top" alt="..." style="height: 200px">
-                <div class="card-body">
-                  <p class="card-text"><h3>Cooking</h3></p>
-                </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+                <div id="passwordError" class="text-danger mt-1"></div>
+                <!-- Error message placeholder -->
               </div>
-            </div>
-            <div class="col d-flex justify-content-center pt-5">
-              <div class="card" style="width: 18rem;">
-                <img src="images/Gardening.jpg" class="card-img-top" alt="..." style="height: 200px">
-                <div class="card-body">
-                  <p class="card-text"><h3>Gardening</h3></p>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex justify-content-center pt-5">
-              <div class="card" style="width: 18rem;">
-                <img src="images/hiking.jpg" class="card-img-top" alt="..." style="height: 200px">
-                <div class="card-body">
-                  <p class="card-text"><h3>Hiking</h3></p>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex justify-content-center pt-5">
-              <div class="card" style="width: 18rem;">
-                <img src="images/Golf.jpeg" class="card-img-top" alt="..." style="height: 200px">
-                <div class="card-body">
-                  <p class="card-text"><h3>Golf</h3></p>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex justify-content-center pt-5">
-              <div class="card" style="width: 18rem;">
-                <img src="images/Movie.jpeg" class="card-img-top" alt="..." style="height: 200px">
-                <div class="card-body">
-                  <p class="card-text"><h3>Movie</h3></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    <!--Abhishek's code area end-->
-
-    <!--Gayatri's code area start-->
-
-    
-    <!-- Banner Section -->
-    <section id="banner">
-
-        <div class="px-4 pt-5 my-5 text-center ">
-            <h1  class="display-4 fw-bold  color" >Platform where hobbies become friendships</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Dive into a community of like-minded hobbyists, explore new passions, and build lasting friendships along the way!</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <button type="button" class="btn btn-primary btn-lg px-5 me-sm-3">Join Now</button>
-             
-              </div>
-            </div>
-            <div class="overflow-hidden" style="max-height: 30vh;">
-              <div class="container px-5">
-                <img src="./images/students.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="800" height="500" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-     </section>
-
-     <!-- popular hobbies Section -->
-     <section id="popular-hobbies" class="container my-5">
-        <h2 class="text-center mb-5">Events Near Boston, MA</h2> 
-        <div class="row">
-          <div class="col-md-3 mb-4"> 
-            <div class="card">
-              <img src="./images/photography.jpg" class="card-img-top" alt="Hobby 1" height="200">
-              <div class="card-body">
-                <h5 class="card-title">Photography Workshops</h5>
-                <p class="card-text">Capture moments and develop your photography skills.</p>
-                <a href="#" class="btn btn-primary">Explore Groups</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4"> 
-            <div class="card">
-              <img src="./images/Hiking.jpg" class="card-img-top" alt="Hobby 2 "height="200">
-              <div class="card-body">
-                <h5 class="card-title">Hiking Meetups</h5>
-                <p class="card-text">Join hiking groups and explore beautiful trails together.</p>
-                <a href="#" class="btn btn-primary">Explore Groups</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4"> 
-            <div class="card">
-              <img src="./images/cooking.jpg" class="card-img-top" alt="Hobby 3"height="200">
-              <div class="card-body">
-                <h5 class="card-title">Cooking Classes</h5>
-                <p class="card-text">Share recipes and cooking techniques with fellow food lovers.</p>
-                <a href="#" class="btn btn-primary">Explore Groups</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4"> 
-            <div class="card">
-              <img src="./images/art.jpg" class="card-img-top" alt="Hobby 4"height="200"> <!-- Replace with your image -->
-              <div class="card-body">
-                <h5 class="card-title">Art & Craft Events</h5>
-                <p class="card-text">Join art classes and unleash your creativity.</p>
-                <a href="#" class="btn btn-primary">Explore Groups</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <!--Gayatri's code area end-->
-
-    <!--Gayatri's code area start-->
-    <!--Gayatri's code area end-->
-
-    <!--Krish's code area start-->
-    <!-- Pricing Section -->
-    <section class="pricing-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col">
-            <h2 class="section-title">Join Our Hobby Community</h2>
-            <p class="section-subtitle">
-              Choose the plan that fits your passion
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <!-- Basic Plan -->
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card pricing-card"
-              data-bs-toggle="tooltip"
-              title="Ideal for casual hobbyists looking to explore"
-            >
-              <div class="card-header">Hobby Explorer</div>
-              <div class="card-body">
-                <h3 class="price">$15 <small>/month</small></h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Access to hobby tutorials and resources
-                  </li>
-                  <li class="list-group-item">
-                    Join local hobby groups and meet-ups
-                  </li>
-                  <li class="list-group-item">
-                    Monthly newsletter with tips and tricks
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary mt-4">Get Started</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Standard Plan -->
-          <div class="col-lg-4 col-md-6">
-            <div
-              class="card pricing-card"
-              data-bs-toggle="tooltip"
-              title="Perfect for dedicated hobbyists who want more"
-            >
-              <div class="card-header">Passionate Creator</div>
-              <div class="card-body">
-                <h3 class="price">$35 <small>/month</small></h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Access to premium tutorials and resources
-                  </li>
-                  <li class="list-group-item">
-                    Exclusive invites to hobby events
-                  </li>
-                  <li class="list-group-item">
-                    Personalized project feedback from experts
-                  </li>
-                  <li class="list-group-item">
-                    Access to online workshops and webinars
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary mt-4">Join Now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Premium Plan -->
-          <div class="col-lg-4 col-md-6 mx-md-auto">
-            <div
-              class="card pricing-card"
-              data-bs-toggle="tooltip"
-              title="For the ultimate hobbyist experience"
-            >
-              <div class="card-header">Master Artisan</div>
-              <div class="card-body">
-                <h3 class="price">$69 <small>/month</small></h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Unlimited access to all resources and workshops
-                  </li>
-                  <li class="list-group-item">
-                    1-on-1 mentoring with industry experts
-                  </li>
-                  <li class="list-group-item">
-                    Free access to community events and expos
-                  </li>
-                  <li class="list-group-item">
-                    24/7 support and community chat
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary mt-4">Go Premium</a>
-              </div>
-            </div>
+              <br />
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg btn-block full-width-btn"
+                id="signInBtn"
+                disabled
+              >
+                Sign In
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-section py-5 bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col">
-            <h2 class="section-title">What Our Members Say</h2>
-            <p class="section-subtitle">
-              Hear from hobby enthusiasts just like you
-            </p>
-          </div>
-        </div>
-
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card testimonial-card mx-auto">
-                    <div class="card-body text-center">
-                      <p class="testimonial-text">
-                        "This community has ignited my passion for painting. The
-                        tutorials are engaging and informative!"
-                      </p>
-                      <h5 class="testimonial-author">
-                        – Sarah, Aspiring Painter
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card testimonial-card mx-auto">
-                    <div class="card-body text-center">
-                      <p class="testimonial-text">
-                        "I've learned so much about photography techniques and
-                        met so many amazing people!"
-                      </p>
-                      <h5 class="testimonial-author">
-                        – Alex, Photography Enthusiast
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card testimonial-card mx-auto">
-                    <div class="card-body text-center">
-                      <p class="testimonial-text">
-                        "The DIY project ideas have transformed my weekends! I
-                        can’t get enough of the creative challenges!"
-                      </p>
-                      <h5 class="testimonial-author">– Jamie, DIY Lover</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card testimonial-card mx-auto">
-                    <div class="card-body text-center">
-                      <p class="testimonial-text">
-                        "Joining this community has not only enhanced my skills
-                        but also helped me make lifelong friends!"
-                      </p>
-                      <h5 class="testimonial-author">
-                        – Emily, Craft Enthusiast
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card testimonial-card mx-auto">
-                    <div class="card-body text-center">
-                      <p class="testimonial-text">
-                        "The mentorship program was a game-changer for my
-                        woodworking skills!"
-                      </p>
-                      <h5 class="testimonial-author">– Chris, Woodworker</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card testimonial-card mx-auto">
-                    <div class="card-body text-center">
-                      <p class="testimonial-text">
-                        "I love how diverse the community is! There’s something
-                        here for every hobbyist!"
-                      </p>
-                      <h5 class="testimonial-author">– Jordan, Hobbyist</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!--Krish's code area end-->
-
-    <!--Hrishi's code area start-->
-
-    <div class="tooltip_div">
-      <h2>Our most successful community</h2>
-
-      <br>
-
-      <h3>The Potters</h3>
-
-      <br>
-      <div class="container">
-        <div class="row">
-          <div class="col-24">
-            <div class="container">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/l-dd7fW2Q9E?si=2aw8bJTtKetkDHRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="container custom_card" style="padding: 5px 5px 5px 5px;">
-          <div class="row">
-              <div class="col-lg-6 mb-4">
-                  <div class="card" style="width: 18rem; padding: 10px 10px 10px 10px;">
-                      <img src="images/origami.jpeg" class="card-img-top" style="width: 270px; height: 200px;">
-                      <div class="card-body">
-                        <h5 class="card-title">Origami</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button class="button">Read More</button>
-                      </div>
-                    </div>
-              </div>
-              <div class="col-lg-6 mb-4">
-                  <div class="card" style="width: 18rem; padding: 10px 10px 10px 10px;">
-                      <img src="images/kirigami.jpg" class="card-img-top" style="width: 270px; height: 200px; padding: auto;">
-                      <div class="card-body">
-                        <h5 class="card-title">Kirigami</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button>Read More</button>
-                      </div>
-                    </div>
-              </div>
-
-          </div>
-      </div>         -->
-<br>
-      <div class="container">
-        <h5>Join this community to learn about</h5>
-        <div class="row">
-          <div class="col-12">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="A type of pottery that has not been fired to the point of vitrification and is thus slightly porous">
-              Earthenware
-            </button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="A type of pottery that's made from clay and fired at a high temperature, resulting in a dense, durable, and non-porous material with a stone-like quality">
-              Stoneware
-            </button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="It uses a fine-grained, plastic sedimentary clay that is a key ingredient in pottery, particularly for ceramic whiteware and sanitaryware">
-              Ballclay
-            </button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="It uses a ceramic material that is hard, nonporous, and translucent, and is made by firing a mixture of kaolin, quartz, and a feldspathic rock at high temperatures">
-              Porcelain
-            </button>
-          </div>
-        </div>
-      </div>  
-    </div>
-
-    <br>
-    <br>
-
-  <div class="container">
-  <div class="row">
-      <div class = "col-5">
-          <h3>Benefits</h3>
-          <h7>People that follow their hobbies notice an increase in their skills</h7>
-        </div>
-      <div class = "col-7">
-          <div class="progress mb-2">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"> Cognitive skills improved by 94%</div>
-            </div>
-            <div class="progress mb-2">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"> Social skills improved by 93%</div>
-            </div>
-            <div class="progress mb-2">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">Organisational skills improved by 92%</div>
-            </div>
-            <div class="progress mb-2">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Analytical skills improved by 95%</div>
-            </div>
-      </div>
-  </div>
-  </div>
-    <br>
-    <br>
-
-        <section class="form_container">
-          <header>Registration to our Newsletter</header>
-          <form action="#" class="form">
-            <div class="input-box">
-              <label>Full Name</label>
-              <input type="text" placeholder="Enter full name" required />
-            </div>
-    
-            <div class="input-box">
-              <label>Email Address</label>
-              <input type="text" placeholder="Enter email address" required />
-            </div>
-    
-            <div class="column">
-              <div class="input-box">
-                <label>Phone Number</label>
-                <input type="number" placeholder="Enter phone number" required />
-              </div>
-              <div class="input-box">
-                <label>Birth Date</label>
-                <input type="date" placeholder="Enter birth date" required />
-              </div>
-            </div>
-            <div class="gender-box">
-              <h3>Gender</h3>
-              <div class="gender-option">
-                <div class="gender">
-                  <input type="radio" id="check-male" name="gender" checked />
-                  <label for="check-male">male</label>
-                </div>
-                <div class="gender">
-                  <input type="radio" id="check-female" name="gender" />
-                  <label for="check-female">Female</label>
-                </div>
-                <div class="gender">
-                  <input type="radio" id="check-other" name="gender" />
-                  <label for="check-other">Other</label>
-                </div>
-              </div>
-            </div>
-    
-            </div>
-            <button>Submit</button>
-          </form>
-    
-        </section>
-        <div >
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
-        
-            <ul class="nav col-md-4 justify-content-end">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-          </footer>
-        </div>
-
-    <!--Hrishi's code area start-->
-
-    <!-- Initialize tooltips -->
-    <script>
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
