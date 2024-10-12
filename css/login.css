@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  background-color: #f8f7f5;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  color: #15b392;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.form-title {
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+  color: #615f5f;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-floating .form-control {
+  border: 1px solid #15b392;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.form-floating label {
+  color: #666;
+}
+
+.full-width-btn:disabled {
+  background-color: #c1e1c1;
+  color: rgb(37, 18, 18);
+  border: none;
+}
+
+.full-width-btn {
+  background-color: #3b695f;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.full-width-btn:hover {
+  background-color: #15b392;
+}
+
+@media (max-width: 1024px) {
+  .col-md-8,
+  .col-md-7 {
+    order: 2;
+  }
+
+  .col-md-7 {
+    order: 1;
+  }
+
+  .col-md-7,
+  .col-md-8 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .col-md-7,
+  .col-md-8 {
+    margin-bottom: 1.5rem;
+  }
+}

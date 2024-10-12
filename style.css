@@ -52,6 +52,23 @@ body {
 /* Abhishek's code area end */
 
 /* Gayatri's code area start */
+#banner{
+    background-color: #F4F8F7;
+}
+h1,h2{
+    color: #15B392;
+}
+
+.btn {
+    background-color: #D2FF72; /* Initial button color */
+    color: #333333;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.btn:hover {
+    background-color: #00796B; /* Button color on hover */
+}
 /* Gayatri's code area end */
 
 /* Hrishi's code area start */
@@ -59,3 +76,115 @@ body {
 
 /* Rajvi's code area start */
 /* Rajvi's code area end */
+
+/* Krish's code area start */
+/* Pricing Section Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.pricing-section {
+  padding: 60px 0;
+}
+
+.pricing-card {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #28a745;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 30px;
+}
+
+.card-body .price {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  color: #777;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+  padding: 60px 0;
+}
+
+.testimonial-card {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 100%;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Ensure carousel controls are visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Control carousel item display for 3 testimonials at once */
+.carousel-item {
+  transition: transform 0.5s ease;
+}
+
+.carousel .row {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+  align-items: center;
+}
+
+/* Krish's code area end */
