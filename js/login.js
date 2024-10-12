@@ -1,14 +1,35 @@
-// $(document).ready(function () {
-//   $("#loginForm").on("submit", function (event) {
-//     event.preventDefault();
+$(document).ready(function () {
+  const emailInput = $("#floatingInput");
+  const passwordInput = $("#floatingPassword");
+  const signInBtn = $("#signInBtn");
+  const emailError = $("#emailError");
+  const passwordError = $("#passwordError");
 
-//     var username = $("#username").val();
-//     var password = $("#password").val();
+  const emailRegex = /^[^\s@]+@northeastern\.edu$/;
 
-//     if (username === "admin" && password === "password123") {
-//       window.location.href = "home.html"; // Redirect to home page
-//     } else {
-//       $("#errorMessage").removeClass("d-none"); // Show error message
-//     }
-//   });
-// });
+  function validateInputs() {
+    const email = emailInput.val();
+    const password = passwordInput.val();
+
+    let isValid = true;
+
+    if (!emailRegex.test(email)) {
+      emailError.text("Please use a valid northeastern.edu email.");
+      isValid = false;
+    } else {
+      emailError.text("");
+    }
+
+    if (password.length < 6) {
+      passwordError.text("Password must be at least 6 characters.");
+      isValid = false;
+    } else {
+      passwordError.text("");
+    }
+
+    signInBtn.prop("disabled", !isValid);
+  }
+
+  emailInput.on("input", validateInputs);
+  passwordInput.on("input", validateInputs);
+});

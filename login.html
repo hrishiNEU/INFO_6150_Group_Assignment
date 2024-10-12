@@ -42,6 +42,8 @@
                   placeholder="name@example.com"
                 />
                 <label for="floatingInput">Email address</label>
+                <div id="emailError" class="text-danger mt-1"></div>
+                <!-- Error message placeholder -->
               </div>
               <div class="form-floating">
                 <input
@@ -51,11 +53,15 @@
                   placeholder="Password"
                 />
                 <label for="floatingPassword">Password</label>
+                <div id="passwordError" class="text-danger mt-1"></div>
+                <!-- Error message placeholder -->
               </div>
               <br />
               <button
                 type="submit"
                 class="btn btn-primary btn-lg btn-block full-width-btn"
+                id="signInBtn"
+                disabled
               >
                 Sign In
               </button>
